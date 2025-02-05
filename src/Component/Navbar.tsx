@@ -29,7 +29,7 @@ function Navbar() {
 
         <div className={`collapse navbar-collapse ${isNavCollapsed ? '' : 'show'}`} id="navbarNav">
           <div className="navbar-nav ms-auto">
-            <Link className='nav-link' to="/">Note</Link>
+            <Link className='nav-link' to="/Main">Note</Link>
             <Link className="nav-link" to="/Login">Profile</Link>
           </div>
         </div>

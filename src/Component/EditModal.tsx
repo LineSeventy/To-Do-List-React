@@ -1,8 +1,8 @@
 import  { useState } from 'react';
 
 interface EditModalProps {
-    note: { title: string; desc: string; id: string }; // Include 'id' in the note prop type
-    onSave: (updatedNote: { id: string; title: string; desc: string }) => void; // Include 'id' in the onSave type
+    note: { title: string; desc: string; id: string }; 
+    onSave: (updatedNote: { id: string; title: string; desc: string }) => void; 
     onClose: () => void;
   }
   function EditModal({ note, onSave, onClose }: EditModalProps) {
@@ -14,7 +14,7 @@ interface EditModalProps {
           console.error("Note ID is missing when trying to save changes");
           return;
         }
-        onSave({ id: note.id, title, desc }); // Include the id when saving
+        onSave({ id: note.id, title, desc }); 
       };
       
   
